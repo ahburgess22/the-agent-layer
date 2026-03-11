@@ -1,0 +1,97 @@
+baseURL = "https://theagentlayer.net/"
+languageCode = "en-us"
+title = "The Agent Layer"
+theme = "PaperMod"
+paginate = 10
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[params]
+  env = "production"
+  title = "The Agent Layer"
+  description = "AI Agent Security Research — documenting real-world agentic breaches, attack techniques, and defensive frameworks."
+  keywords = ["AI security", "agent security", "prompt injection", "LLM security", "cybersecurity"]
+  author = "Austin"
+  # profileMode disabled — home page shows post list
+  defaultTheme = "dark"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
+
+  [params.assets]
+    disableHLJS = true  # use built-in Hugo highlight
+
+  [params.homeInfoParams]
+    Title = "The Agent Layer"
+    Content = "AI Agent Security Research — documenting real-world agentic breaches, attack techniques, and defensive frameworks as the field develops in real time."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/ahburgess22"
+
+  [params.editPost]
+    URL = "https://github.com/ahburgess22/the-agent-layer/tree/main/content"
+    Text = "Suggest Edit"
+    appendFilePath = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+    anchorLineNos = true
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    style = "monokai"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 30
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 40
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
