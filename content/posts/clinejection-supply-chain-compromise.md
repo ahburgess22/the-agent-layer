@@ -15,7 +15,7 @@ TocOpen: false
 ---
 
 <div style="border-left: 3px solid #6b7280; background: rgba(255,255,255,0.04); padding: 12px 18px; margin: 1.5rem 0; border-radius: 0 4px 4px 0;">
-<strong>TLDR:</strong> A public GitHub issue was all it took to compromise Cline's release pipeline — an attacker used their AI-powered issue bot against them, poisoned a shared build cache, stole publishing credentials, and shipped a malicious package to hundreds of thousands of developers.
+<strong>TLDR:</strong> Cline's own AI support bot was weaponized against them — an attacker fed it instructions through a public GitHub issue, it complied, and the result was malicious software shipped to over a million weekly users. <strong>They didn't breach the system. They gave the AI instructions through a public channel, and it executed them.</strong> The bot didn't have direct access to publishing credentials. It corrupted the infrastructure that did.
 </div>
 
 Cline is one of the most popular AI coding tools in the world. Their GitHub repo runs an AI bot that automatically reads and responds to incoming issues — helpful for triage at scale. Someone figured out that if you craft the right issue title, the bot doesn't just read it. It follows it.
