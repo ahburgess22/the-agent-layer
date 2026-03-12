@@ -10,12 +10,9 @@ tags:
   - threat-surface
   - consumer-ai
 series: ["Breach Catalog"]
-description: "Claude Cowork gives an AI agent access to your files, your browser, and your terminal — and any content it reads along the way is a potential attack surface. No breach confirmed yet, but the conditions are fully established."
 showToc: false
 TocOpen: false
 ---
-
-**ENTRY #002 — Cowork Threat Surface**
 
 <div style="border-left: 3px solid #6b7280; background: rgba(255,255,255,0.04); padding: 12px 18px; margin: 1.5rem 0; border-radius: 0 4px 4px 0;">
 <strong>TLDR:</strong> Claude Cowork gives an AI agent access to your files, your browser, and your terminal — and any content it reads along the way is a potential attack surface. No breach confirmed yet, but the conditions are fully established.
@@ -30,5 +27,3 @@ This isn't theoretical. It's a known class of attack called **indirect prompt in
 The conditions that produced the Cline supply chain compromise are present here **at consumer scale**. The difference is surface area: Cline was one repo. Cowork is anyone with a $20/month subscription and a folder of work files.
 
 **The lesson:** General-purpose agents processing untrusted external content — files, web pages, search results — require explicit trust boundaries between what the user instructed and what the agent encountered in the wild. Without that boundary, **capability and exploitability are the same thing**.
-
-\#CyberSecurity \#AISecurity \#PromptInjection \#AIAgents \#ThreatModeling \#InfoSec \#AppSec \#AgentSecurity \#DigitalRisk
