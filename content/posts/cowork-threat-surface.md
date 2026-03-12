@@ -15,7 +15,7 @@ TocOpen: false
 ---
 
 <div style="border-left: 3px solid #6b7280; background: rgba(255,255,255,0.04); padding: 12px 18px; margin: 1.5rem 0; border-radius: 0 4px 4px 0;">
-<strong>TLDR:</strong> Claude Cowork gives an AI agent access to your files, your browser, and your terminal — and any content it reads along the way is a potential attack surface. No breach confirmed yet, but the conditions are fully established.
+<strong>TLDR:</strong> Anthropic's new consumer AI agent can read your files, browse the web, and run commands on your machine — all on your behalf, all autonomously. <strong>When an AI acts on your behalf, anything it reads can act on your behalf too.</strong> No confirmed breach yet, but the same attack class already produced a supply chain compromise at Cline. The difference is this product is marketed to everyone at $20 a month.
 </div>
 
 Claude Cowork is Anthropic's general-purpose desktop agent — released to all Pro subscribers in early 2026. It reads your files, fetches web pages, runs terminal commands, and executes multi-step tasks on your behalf. **That's the product. That's also the attack surface.**
