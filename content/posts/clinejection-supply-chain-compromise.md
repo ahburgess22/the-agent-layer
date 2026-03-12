@@ -10,12 +10,9 @@ tags:
   - github-actions
   - agent-security
 series: ["Breach Catalog"]
-description: "A public GitHub issue was all it took to compromise Cline's release pipeline — an attacker used their AI-powered issue bot against them, poisoned a shared build cache, stole publishing credentials, and shipped a malicious package to hundreds of thousands of developers."
 showToc: false
 TocOpen: false
 ---
-
-**ENTRY #001 — Clinejection**
 
 <div style="border-left: 3px solid #6b7280; background: rgba(255,255,255,0.04); padding: 12px 18px; margin: 1.5rem 0; border-radius: 0 4px 4px 0;">
 <strong>TLDR:</strong> A public GitHub issue was all it took to compromise Cline's release pipeline — an attacker used their AI-powered issue bot against them, poisoned a shared build cache, stole publishing credentials, and shipped a malicious package to hundreds of thousands of developers.
@@ -30,5 +27,3 @@ The bot never had access to those secrets. It didn't need direct access. It just
 **The lesson that matters:** When you give an AI agent broad tool permissions and point it at public input — GitHub issues, emails, support tickets — you're not just automating a task. You're creating **an execution environment that anyone on the internet can attempt to program**. The blast radius isn't limited to what the agent can directly access. It extends to everything that trusts the environment the agent operates in.
 
 **Least privilege** isn't a nice-to-have on agentic systems. It's the primary control.
-
-\#CyberSecurity \#AISecurity \#SupplyChainSecurity \#PromptInjection \#AppSec \#DevSecOps \#AgentSecurity \#InfoSec
